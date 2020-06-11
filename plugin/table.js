@@ -17,10 +17,10 @@ class Table {
             this.pager = new Pager({
                 container: this.tfoot,
                 ...this.options.pageOptions
-            })
-            this.pager.total = val;
-            this.pager.render();
+            })   
         }
+        this.pager.total = val;
+        this.pager.render();
     }
 
     get dataSource() {
@@ -97,7 +97,7 @@ class Pager {
         this.container = container;
         this.pageSize = pageSize;
         this.panelNumber = panelNumber;
-        this.render();
+        // this.render();
     }
 
     /**
